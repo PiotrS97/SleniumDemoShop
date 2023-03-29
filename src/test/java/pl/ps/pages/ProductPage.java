@@ -2,7 +2,6 @@ package pl.ps.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.devtools.v108.page.model.BackForwardCacheNotRestoredExplanationTree;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -20,12 +19,12 @@ public class ProductPage {
         this.driver = driver;
     }
 
-    public ProductPage addProductToCart(){
+    public ProductPage addProductToCart() {
         addToCartButton.click();
         return this;
     }
 
-    public CartPage viewCart(){
+    public CartPage viewCart() {
         viewCartButton.click();
         return new CartPage(driver);
     }
